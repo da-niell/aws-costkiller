@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  costkiller-scan:
+    build:
+      context: ./lambda
+    container_name: costkiller-scan
+    volumes:
+      - ./data:/app/data              # Guarda el reporte generado
+      - ~/.aws:/root/.aws:ro          # Acceso a tus credenciales AWS
+    environment:
+      - AWS_PROFILE=default           # O el perfil que uses
+    command: python handler.py
