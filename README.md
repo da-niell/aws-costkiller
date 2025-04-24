@@ -1,7 +1,5 @@
 # 💸 CostKiller – Asesino de Recursos Ociosos en AWS
 
----
-
 ## 🚀 ¿Qué es CostKiller?
 
 CostKiller es una herramienta automatizada que escanea tu cuenta de AWS en busca de recursos ociosos y te genera un informe del **costo potencialmente ahorrado** si los eliminás.
